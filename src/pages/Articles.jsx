@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from 'react';
-import './ConteudoPrincipal.css';
-import bitcoinLogo from '../../assets/bitcoin-logo.png'; // Importando a imagem do logo do Bitcoin
+import './articles.css';
+import bitcoinLogo from '../assets/bitcoin-logo.png'; // Importando a imagem do logo do Bitcoin
 import anime from 'animejs/lib/anime.es.js';
 
 
 
 
-const ConteudoPrincipal = () => {
+const Articles = () => {
   const bitcoinLogoRef = useRef(null);
  
 
@@ -26,7 +26,7 @@ const ConteudoPrincipal = () => {
   
 
   return (
-    <main className="conteudo-principal">
+    <main className="articles">
       <section className="secao-introducao">
         <h1>O que é Bitcoin?</h1>
         <p>Bitcoin é uma criptomoeda descentralizada que utiliza tecnologia de blockchain para registrar transações.</p>
@@ -73,4 +73,4 @@ const ConteudoPrincipal = () => {
   );
 };
 
-export default ConteudoPrincipal;
+export default Articles;

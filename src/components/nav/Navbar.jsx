@@ -1,5 +1,6 @@
 import React from 'react';
-import './Navbar.css'; // Assuming you have a CSS file for styling
+import {Link} from 'react-router-dom'
+ import './Navbar.css'; // Assuming you have a CSS file for styling
 
 
 const Navbar = () => {
@@ -8,10 +9,9 @@ const Navbar = () => {
       <nav className="navbar">
         <h1 className="logo">Bolsacripto</h1>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <Link to="/home">Home</Link>
+          <Link to="/articles">Artigos</Link>
+          <Link to="/about">Sobre</Link>
         </ul>
       </nav>
     </>
