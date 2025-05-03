@@ -1,8 +1,14 @@
-import React from "react";
+import React from 'react';
+import MyLogo from '../assets/solana.svg'; 
+import anime from 'animejs/lib/anime.es.js';
+import './home.css'; 
 
-function Home(){
-    return <h1>Seja bem vindo </h1>
+export default function RotatingLogo() {
+  return (
+    <div className="animate__animated animate__fadeIn">
+      <img src={MyLogo} alt="Logo" className="spin" width="150" />
+    </div>
+  );
 }
 
 
-export default Home
