@@ -5,21 +5,25 @@ import Navbar from './components/nav/Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
 import Articles from './pages/Articles'
+import AnimatedShapes from './components/mainPage/MainPage'
 
 
 
 function App() {
   
   return (
-    <Router>
-        <Navbar/>
-          <Routes>
-              <Route path="/Home" element={<Home/>}/>
-              <Route path="/articles" element={<Articles/>}/>
-              <Route path="/about" element={<About/>}/>
-          </Routes>
-          <Footer/>
-    </Router>
+    <div className="app-container">
+      <Router>
+          <Navbar/>
+            <Routes>
+                <Route path="/Home" element={<Home/>}/>
+                <Route path="/articles" element={<Articles/>}/>
+                <Route path="/about" element={<About/>}/>
+            </Routes>
+            <AnimatedShapes/>
+            <Footer/>
+      </Router>
+    </div>
   )
 }
 
