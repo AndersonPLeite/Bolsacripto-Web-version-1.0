@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Articles from './pages/Articles'
 import AnimatedShapes from './components/mainPage/MainPage'
+import TradingViewTicker from './components/ticker/Ticker'
 
 
 
@@ -15,12 +16,13 @@ function App() {
     <div className="app-container">
       <Router>
           <Navbar/>
+          <TradingViewTicker/>
             <Routes>
-                <Route path="/Home" element={<Home/>}/>
+                <Route path="/home" element={<Home/>}/>
                 <Route path="/articles" element={<Articles/>}/>
                 <Route path="/about" element={<About/>}/>
             </Routes>
-            <AnimatedShapes/>
+           
             <Footer/>
       </Router>
     </div>

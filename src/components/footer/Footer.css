@@ -3,12 +3,13 @@
     color: #fff;
     padding: 2rem;
     text-align: center;
+    margin-top: auto;
   }
   
   .footer-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
   
   .footer-section {

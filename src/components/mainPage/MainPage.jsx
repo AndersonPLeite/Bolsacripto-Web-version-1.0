@@ -49,7 +49,7 @@ export default function AnimatedShapes() {
   return (
     <main>
         <div style={{containerStyle}}>
-            <div ref={loopCounterRef} className="loops" style={{ marginBottom: '1rem', fontWeight: 'bold' }} />
+            
             <img ref={circleRef} src={bitcoin} alt="Bitcoin-logo" style={svgStyle} />
             <img ref={squareRef} src={solana} alt="Solana-logo" style={svgStyle} />
             <img ref={triangleRef} src={ethereum} alt="Ethereum-logo" style={svgStyle} />
